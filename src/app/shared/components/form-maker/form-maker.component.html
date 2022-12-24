@@ -1,1 +1,6 @@
-<p>form-maker works!</p>
+<form [formGroup]="dynamicFormGroup">
+  <div *ngFor="let field of fields">
+    <app-dynamic-field [field]="field"></app-dynamic-field>
+    <app-dynamic-error [fieldName]="field.fieldName"></app-dynamic-error>
+  </div>
+</form>

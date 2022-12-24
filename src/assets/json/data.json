@@ -1,0 +1,112 @@
+{
+    "model":{
+    "firstName": {
+      "type": "text",
+      "value": "",
+      "label": "First Name",
+      "field":"firstName",
+      "rules": {
+        "required": true
+      },
+      "order":1
+    },
+    "lastName": {
+      "type": "text",
+      "value": "",
+      "label": "Last Name",
+      "field":"lastName",
+      "order":2
+    },
+    "address": {
+      "type": "text",
+      "value": "",
+      "label": "Address",
+      "field":"address",
+      "order":4
+
+    },
+    "age": {
+      "type": "number",
+      "value": "",
+      "label": "Age",
+      "field":"age",
+      "order":3
+
+    },
+    "birthDay": {
+      "type": "date",
+      "value": "",
+      "label": "Birthday",
+      "field":"birthday",
+      "order":5
+
+    },
+    "typeBussines": {
+      "label": "Bussines Type",
+      "field":"bussinesType",
+      "value": "premium",
+      "type": "radio",
+      "order":6,
+      "options": [
+        {
+          "label": "Enterprise",
+          "value": "1500",
+          "field":"enterprise"
+
+        },
+        {
+          "label": "Home",
+          "value": "6",
+          "field":"home"
+
+        },
+        {
+          "label": "Personal",
+          "value": "1",
+          "field":"personal"
+
+        }
+      ]
+    },
+    "newsletterIn": {
+      "label": "Suscribe to newsletter",
+      "field": "Suscribe to newsletter",
+      "value": "email",
+      "type": "checkbox",
+      "order":7
+
+    },
+    "suscriptionType": {
+      "label": "Suscription Type",
+      "field": "Suscription Type",
+      "value": "premium",
+      "type": "select",
+      "order":8,
+      "options": [
+        {
+          "label": "Pick one",
+          "field": "Pick one",
+          "value": ""
+        },
+        {
+          "label": "Premium",
+          "field": "Pick one",
+          "value": "premium"
+        },
+        {
+          "label": "Basic",
+          "field": "Basic",
+          "value": "basic"
+        }
+      ]
+    },
+    "description": {
+      "label": "Description",
+      "field": "description",
+      "value": "",
+      "type": "textarea",
+      "order":9
+
+    }
+}
+}

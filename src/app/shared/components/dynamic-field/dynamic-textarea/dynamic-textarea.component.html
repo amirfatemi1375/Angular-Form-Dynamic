@@ -1,1 +1,7 @@
-<p>dynamic-textarea works!</p>
+<form [formGroup]="formName">
+  <div class="form-group">
+    <label>{{ field.label }} : </label>
+    <textarea class="form-control" [formControlName]="field.fieldName">
+    </textarea>
+  </div>
+</form>

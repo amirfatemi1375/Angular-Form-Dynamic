@@ -1,6 +1,12 @@
 # AngularDynamicForm
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+This project includes a dynamic form builder that automatically creates the form as a reactive form based on the information it receives from the server.
+The project architecture includes several layers such as core-features-models-shared-config
+The components related to the form builder are located in the shared layer
+The core layer is information about services and http
+The config layer stores information about constants such as the names of routes
+The features layer maintains new pages and new features that will be added to the system
 
 ## Development server
 

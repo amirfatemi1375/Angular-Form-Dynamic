@@ -1,1 +1,11 @@
-<p>dynamic-checkbox works!</p>
+<form [formGroup]="formName">
+  <label>
+    {{ field.label }}
+    <input
+      type="checkbox"
+      [name]="field.fieldName"
+      [formControlName]="field.fieldName"
+      [value]="field.value"
+    />
+  </label>
+</form>

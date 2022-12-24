@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormMakerComponent } from './components/form-maker/form-maker.component';
-import { DynamicFieldComponent } from './components/dynamic-field/dynamic-field.component';
-import { DynamicSelectComponent } from './components/dynamic-field/dynamic-select/dynamic-select.component';
-import { DynamicInputComponent } from './components/dynamic-field/dynamic-input/dynamic-input.component';
-import { DynamicRadioComponent } from './components/dynamic-field/dynamic-radio/dynamic-radio.component';
-import { DynamicTextareaComponent } from './components/dynamic-field/dynamic-textarea/dynamic-textarea.component';
-import { DynamicCheckboxComponent } from './components/dynamic-field/dynamic-checkbox/dynamic-checkbox.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormMakerComponent,
+  DynamicFieldComponent,
+  DynamicInputComponent,
+  DynamicSelectComponent,
+  DynamicRadioComponent,
+  DynamicTextareaComponent,
+  DynamicCheckboxComponent,
+} from './components';
+import { NumberDirective } from './directives/number-only/number.directive';
+import { DynamicErrorComponent } from './components/form-maker/dynamic-error/dynamic-error.component';
 @NgModule({
   declarations: [
     FormMakerComponent,
@@ -15,8 +20,11 @@ import { DynamicCheckboxComponent } from './components/dynamic-field/dynamic-che
     DynamicInputComponent,
     DynamicRadioComponent,
     DynamicTextareaComponent,
-    DynamicCheckboxComponent
+    DynamicCheckboxComponent,
+    NumberDirective,
+    DynamicErrorComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
+  exports: [FormMakerComponent, NumberDirective],
 })
 export class SharedModule {}

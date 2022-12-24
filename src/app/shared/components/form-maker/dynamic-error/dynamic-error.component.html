@@ -1,0 +1,13 @@
+<div
+  *ngIf="
+    formName.controls[fieldName].invalid &&
+    (formName.controls[fieldName].dirty || formName.controls[fieldName].touched)
+  "
+>
+  <div
+    class="text text-danger"
+    *ngIf="formName.controls[fieldName].errors?.['required']"
+  >
+    {{ fieldName }} is Required
+  </div>
+</div>
