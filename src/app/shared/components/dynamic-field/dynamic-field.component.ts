@@ -57,7 +57,7 @@ export class DynamicFieldComponent implements AfterViewInit {
     private formgroupDirective: FormGroupDirective,
     private cd: ChangeDetectorRef
   ) {
-    this.formName = formgroupDirective.control;
+    this.formName = this.formgroupDirective.control;
   }
 
   ngAfterViewInit(): void {

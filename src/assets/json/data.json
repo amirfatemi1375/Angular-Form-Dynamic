@@ -15,6 +15,9 @@
       "value": "",
       "label": "Last Name",
       "field":"lastName",
+      "rules": {
+        "required": true
+      },
       "order":2
     },
     "address": {

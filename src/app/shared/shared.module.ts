@@ -12,6 +12,7 @@ import {
 } from './components';
 import { NumberDirective } from './directives/number-only/number.directive';
 import { DynamicErrorComponent } from './components/form-maker/dynamic-error/dynamic-error.component';
+import { FilterPipe } from './pipes/filter/filter.pipe';
 @NgModule({
   declarations: [
     FormMakerComponent,
@@ -23,6 +24,7 @@ import { DynamicErrorComponent } from './components/form-maker/dynamic-error/dyn
     DynamicCheckboxComponent,
     NumberDirective,
     DynamicErrorComponent,
+    FilterPipe,
   ],
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
   exports: [FormMakerComponent, NumberDirective],
